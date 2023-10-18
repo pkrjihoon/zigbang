@@ -10,7 +10,7 @@ function App() {
           지훈짱짱
         </p>
         <p>
-          빠빠빠빠빠
+          빠빠빠빠빠!!!!1
         </p>
         {/* <a
           className="App-link"
