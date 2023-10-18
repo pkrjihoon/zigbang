@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           지훈짱짱
+          선희짱짱짱
         </p>
         <p>
           빠빠빠빠빠!!!!1
