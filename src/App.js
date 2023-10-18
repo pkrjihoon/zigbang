@@ -12,6 +12,7 @@ function App() {
         </p>
         <p>
           빠빠빠빠빠!!!!1
+          빠빠빠빠빠!!!!2
         </p>
         {/* <a
           className="App-link"
