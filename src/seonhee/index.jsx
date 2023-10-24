@@ -9,6 +9,7 @@ export default function seonhee(){
                 선희짱짱맨
             </Bule>
             <Expale />
+            
        </>
     )
 }
