@@ -90,7 +90,9 @@ function MyComponent() {
           </div>
         ))}
       </div>
-    </Tabbox>
+      </Tabbox>
+
+      
     </div>
     </>
   );

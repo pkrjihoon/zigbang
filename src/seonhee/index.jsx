@@ -4,12 +4,11 @@ import Expale from './expale.jsx'
 
 export default function seonhee(){
     return(
-       <>
+       <>   
+            <Expale />
             <Bule>
                 선희짱짱맨
             </Bule>
-            <Expale />
-            
        </>
     )
 }
