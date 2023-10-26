@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function MyComponent() {
   const [count, setCount] = useState(0);
-  const [activeTab, setActiveTab] = useState('tab1'); // 기본 활성 탭 설정
+  const [activeTab, setActiveTab] = useState('tab'); // 기본 활성 탭 설정
   const [activeTab2, setActiveTab2] = useState('home');
 
   useEffect(() => {
@@ -23,12 +23,20 @@ function MyComponent() {
     setActiveTab2(tab);
   };
 
+  // const tabs = [
+  //   { id: 'home', label: 'Home', content: 'This is the Home tab content.' },
+  //   { id: 'about', label: 'About', content: 'This is the About tab content.' },
+  //   { id: 'content1', label: 'Content 1', content: 'This is Content 1 tab content.' },
+  //   { id: 'content2', label: 'Content 2', content: 'This is Content 2 tab content.' },
+  // ];
+
   const tabs = [
-    { id: 'home', label: 'home' },
-    { id: 'about', label: 'about' },
-    { id: 'content1', label: 'content1' },
-    { id: 'content2', label: 'content2' },
+    { id: 'home'},
+    { id: 'about'},
+    { id: 'content1'},
+    { id: 'content2'},
   ];
+  
 
   return (
     <>
@@ -38,14 +46,14 @@ function MyComponent() {
     </TestBox>
     <div>
       <div>
-        <button onClick={() => handleTabClick('tab1')}>Tab 1</button>
+        <button onClick={() => handleTabClick('tab')}>Tab 1</button>
         <button onClick={() => handleTabClick('tab2')}>Tab 2</button>
         <button onClick={() => handleTabClick('tab3')}>Tab 3</button>
       </div>
       <div>
-        {activeTab === 'tab1' && (
+        {activeTab === 'tab' && (
           <div>
-            <p>Tab 1 Content</p>
+            <p> 12222 Content</p>
           </div>
         )}
         {activeTab === 'tab2' && (
@@ -65,33 +73,53 @@ function MyComponent() {
         {tabs.map((tab) => (
           <li
             key={tab.id}
-            data-target={`#${tab.id}`}
-            className={activeTab2 === tab.id ? 'on' : ''}
+            // data-target={`#${tab.id}`}
+            // className={activeTab2 === tab.id ? 'on' : ''}
             onClick={() => handleTabClick2(tab.id)}
           >
             <a href="#javascript" onClick={(e) => {
               e.preventDefault(); // 기본 링크 동작을 중지
               // 원하는 동작을 여기에 추가
               }}>
-              {tab.label}
+              {tab.id}
             </a>
           </li>
         ))}
       </ul>
 
-      <div>
+      {/* <div>
         {tabs.map((tab) => (
           <div
             key={tab.id}
             id={tab.id}
             className={`tab-content ${activeTab2 === tab.id ? 'on' : ''}`}
           >
+             {tab.content}
             {`${tab.label} ipsum, dolor sit amet consectetur adipisicing elit...`}
           </div>
         ))}
-      </div>
+      </div> */}
       </Tabbox>
+      
+      <div className="tab-content" id="home" style={{ display: activeTab2 === 'home' ? 'block' : 'none' }}>
+        <h1>Home</h1>
+        <p>This is the Home tab content.</p>
+      </div>
 
+      <div className="tab-content" id="about" style={{ display: activeTab2 === 'about' ? 'block' : 'none' }}>
+        <h1>About</h1>
+        <p>This is the About tab content.</p>
+      </div>
+
+      <div className="tab-content" id="content1" style={{ display: activeTab2 === 'content1' ? 'block' : 'none' }}>
+        <h1>Content 1</h1>
+        <p>This is Content 1 tab content.</p>
+      </div>
+
+      <div className="tab-content" id="content2" style={{ display: activeTab2 === 'content2' ? 'block' : 'none' }}>
+        <h1>Content 2</h1>
+        <p>This is Content 2 tab content.</p>
+      </div>
       
     </div>
     </>
