@@ -7,13 +7,13 @@ function MyComponent() {
   const [activeTab2, setActiveTab2] = useState('home');
 
   useEffect(() => {
-    // // 여기에 부수 효과 관련 작업을 수행
-    // console.log('컴포넌트가 렌더링될 때 실행됨');
+    // 여기에 부수 효과 관련 작업을 수행
+    console.log('컴포넌트가 렌더링될 때 실행됨');
 
-    // return () => {
-    //   // 정리(clean-up) 작업을 수행하는 함수
-    //   console.log('컴포넌트가 언마운트되기 전 또는 업데이트되기 전에 실행됨');
-    // };
+    return () => {
+      // 정리(clean-up) 작업을 수행하는 함수
+      console.log('컴포넌트가 언마운트되기 전 또는 업데이트되기 전에 실행됨');
+    };
   }, []); // 의존성 배열
 
   const handleTabClick = (tab) => {
@@ -23,6 +23,7 @@ function MyComponent() {
     setActiveTab2(tab);
   };
 
+  
   // const tabs = [
   //   { id: 'home', label: 'Home', content: 'This is the Home tab content.' },
   //   { id: 'about', label: 'About', content: 'This is the About tab content.' },
@@ -120,6 +121,7 @@ function MyComponent() {
         <h1>Content 2</h1>
         <p>This is Content 2 tab content.</p>
       </div>
+      
       
     </div>
     </>
