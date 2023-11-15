@@ -115,7 +115,7 @@ const Popopen = styled.div`
   }
 .popup-ticket {display:block; z-index:100; position:fixed; top:0; left:0; right:0; bottom:0; background-color:rgba(0,0,0,.3);}
 .popup-ticket .inner {position:fixed; top:50%; left:50%; width:32.7rem; height:27.8rem; padding:4rem 0 5.7rem; background-color:#fff; transform:translate(-50%, -50%); text-align:center; overflow:hidden;}
-button {background-color:transparent; cursor: pointer; border:0;}
+ button {background-color:transparent; cursor: pointer; border:0;}
 .popup-ticket .btn-close {position:absolute; top:3rem; right:2.4rem; width:2.4rem;}
 .popup-ticket h2 {display:inline-block; padding:0 .3rem; font-size:2.1rem; box-shadow:inset 0 -1rem 0 rgb(255, 172, 175, 0.18);}
 .popup-ticket .scroll-box {height:100%; margin-top:4rem; padding:0 4.5rem;}

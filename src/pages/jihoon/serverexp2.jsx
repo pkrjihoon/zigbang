@@ -11,9 +11,11 @@ function App() {
         // 데이터를 상태로 설정
         setData(jsonData);
       })
+
       .catch((error) => {
         console.error('데이터를 불러오는 중 오류가 발생했습니다:', error);
       });
+      
   }, []); // 빈 배열을 전달하여 컴포넌트가 처음 렌더링될 때만 데이터를 가져옴
 
 
