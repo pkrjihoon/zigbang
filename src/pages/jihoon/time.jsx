@@ -113,6 +113,10 @@ const YourPage = ({ serverTime }) => {
     }
   }, [serverTime]);
 
+  useEffect(()=> {
+
+  },[])
+
   return (
     <div>
       <h1>{greeting}</h1>
