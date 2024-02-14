@@ -1,5 +1,5 @@
 import React, { useRef,useState,useEffect } from 'react';
-import closeIcon from '../images/ico_pop_close.png';
+import closeIcon from '../../images/ico_pop_close.png';
 import styled from 'styled-components';
 
 function MyComponent() {
