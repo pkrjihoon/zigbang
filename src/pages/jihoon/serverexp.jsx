@@ -25,17 +25,17 @@ function App() {
   return (
     <div>
       <h1>JSON Data</h1>
-      <ul>
-        {data.map((item, index) => (
-          <li key={index}>
-          <h2>{item.title}</h2>
-            <img src={`https://raw.githubusercontent.com/pkrjihoon/file/main/images/${item.album_image}`} alt={item.title} />
-          </li>
-        ))}
-      </ul>
-      <div>
-        {/* <img src={imageUrl} alt="Sample" /> */}
-      </div>
+        <ul>
+          {data.map((item, index) => (
+            <li key={index}>
+            <h2>{item.title}</h2>
+              <img src={`https://raw.githubusercontent.com/pkrjihoon/file/main/images/${item.album_image}`} alt={item.title} />
+            </li>
+          ))}
+        </ul>
+        <div>
+          {/* <img src={imageUrl} alt="Sample" /> */}
+        </div>
     </div>
   );
 }
